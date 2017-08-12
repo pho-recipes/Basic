@@ -1,7 +1,7 @@
 {
   "name": "pho-recipes/basic",
   "type": "project",
-  "description": "A simplified Twitter clone recreated with Pho Networks",
+  "description": "The basic Pho recipe with simple follow mechanics only.",
   "homepage": "https://phonetworks.org",
   "license": "MIT",
   "authors": [
