@@ -3,7 +3,14 @@
 type Post implements WriteEdge 
 @nodes(head:"Status", tail:"User")
 @properties(binding: true, persistent: true, consumer: true, formative: true, multiplicable: false)
-@labels(headSingular:"post", headPlural: "posts", tailSingular: "author", tailPlural: "authors")
+@labels(
+	headSingular:"post", 
+	headPlural: "posts", 
+	tailSingular: "author", 
+	tailPlural: "authors",
+	feedShort: "%tail.id% posted %head.id%",
+	feedLong: "%tail.id% posted %head.id%"
+)
 {
     id: ID!
 }
