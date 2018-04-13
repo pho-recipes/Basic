@@ -8,8 +8,8 @@ type Post implements WriteEdge
 	headPlural: "posts", 
 	tailSingular: "author", 
 	tailPlural: "authors",
-	feedShort: "%tail.id% posted %head.id%",
-	feedLong: "%tail.id% posted %head.id%"
+	feedSimple: "%tail.id% posted %head.id%",
+	feedAggregated: "%tail.id% posted %head.id%"
 )
 {
     id: ID!
