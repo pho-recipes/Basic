@@ -8,8 +8,8 @@ type Like implements SubscribeEdge
 	headPlural: "likes", 
 	tailSingular: "liker", 
 	tailPlural: "likers",
-	feedShort: "%tail.id% liked %head.id%",
-	feedLong: "%tail.id% liked %head.id%"
+	feedSimple: "%tail.id% liked %head.id%",
+	feedAggregated: "%tail.id% liked %head.id%"
 )
 {
     id: ID!
