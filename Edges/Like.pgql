@@ -3,7 +3,14 @@
 type Like implements SubscribeEdge 
 @nodes(head:"Status", tail:"User")
 @properties(binding: false, persistent: true, consumer: true, multiplicable: false)
-@labels(headSingular:"like", headPlural: "likes", tailSingular: "liker", tailPlural: "likers")
+@labels(
+	headSingular:"like", 
+	headPlural: "likes", 
+	tailSingular: "liker", 
+	tailPlural: "likers",
+	feedSimple: "%tail.username% liked %head.username%",
+	feedAggregated: "%tail.username% liked %head.username%"
+)
 {
     id: ID!
 }
