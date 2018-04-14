@@ -27,8 +27,8 @@ class User extends Foundation\AbstractActorDP {
 
     const FIELDS = "{\"username\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":\"\\/^[_a-z0-9]{1,18}$\\/\",\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":true,\"index\":false}},\"password\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":\"\\/^[a-zA-Z0-9_]{4,12}$\\/\",\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":true,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"join_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"birthday\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"01\\/15\\/1983\",\"unique\":false,\"index\":false}},\"about\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"255\",\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"\",\"unique\":false,\"index\":false}}}";
 
-    const FEED_SIMPLE = "";
-    const FEED_AGGREGATED = "";
+    const FEED_SIMPLE = "%username% has joined";
+    const FEED_AGGREGATED = "%username% have joined";
 
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Lib\Graph\GraphInterface $graph , string $username, string $password, ?string $birthday = "01/15/1983", ?string $about = "")
     {
@@ -56,8 +56,8 @@ class User extends Foundation\AbstractActorDP {
 }
 
 /*****************************************************
- * Timestamp: 1523668268
- * Size (in bytes): 3698
- * Compilation Time: 71
- * d486603e1a2e3dc130bb3441fe0e4508
+ * Timestamp: 1523669132
+ * Size (in bytes): 3741
+ * Compilation Time: 13
+ * 882ff226c2e614468f929f3248e8690f
  ******************************************************/
