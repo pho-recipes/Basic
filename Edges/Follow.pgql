@@ -8,8 +8,8 @@ type Follow implements SubscribeEdge
 	headPlural: "follows", 
 	tailSingular: "follower", 
 	tailPlural: "followers",
-	feedSimple: "%tail.id% followed %head.id%",
-	feedAggregated: "%tail.id% followed %head.id%"
+	feedSimple: "%tail.username% followed %head.username%",
+	feedAggregated: "%tail.username% followed %head.username%"
 )
 {
     id: ID!
