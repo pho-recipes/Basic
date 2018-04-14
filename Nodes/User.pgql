@@ -4,7 +4,7 @@ type User implements ActorNode
 @edges(in:"User:Follow, Status:Mention, User:Consume", out:"Post, Like, Follow, Consume")
 @permissions(mod: "0x07554", mask: "0xfffff") # user themselves, can manage, members can subscribe, outsiders can just read.
 @properties(editable: false, volatile: false, revisionable: false)
-@feed(simpleUpdate: "%username% has joined", aggregatedUpdate: "%id% have joined") # onCreate
+@feed(simpleUpdate: "%username% has joined", aggregatedUpdate: "%username% have joined") # onCreate
 {
     id: ID!,
     username: String! @unique @constraints(regex: "/^[_a-z0-9]{1,18}$/"),
