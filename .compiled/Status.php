@@ -27,6 +27,9 @@ class Status extends Foundation\AbstractObjectDP {
 
     const FIELDS = "{\"status\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"140\",\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}}}";
 
+    const FEED_SIMPLE = "";
+    const FEED_AGGREGATED = "";
+
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $status)
     {
         $this->registerIncomingEdges(UserOut\Post::class);
@@ -44,8 +47,8 @@ class Status extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1523556734
- * Size (in bytes): 2116
- * Compilation Time: 12
- * c8e3bb19d514f9df439ef8a9c93eeb6d
+ * Timestamp: 1523668268
+ * Size (in bytes): 2177
+ * Compilation Time: 70
+ * 49af44ad222df113d16b13287be121b5
  ******************************************************/
