@@ -61,7 +61,7 @@ class LikeNotification extends Foundation\ActorOut\SubscribeNotification
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1653
- * Compilation Time: 175
- * b9d3c67dcc6d5947aab2c886b40adeba
+ * Size (in bytes): 1652
+ * Compilation Time: 51
+ * fd6394451b178851149bf33b016e1236
  ******************************************************/
